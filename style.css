@@ -1,0 +1,605 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+/* header and nav started */
+header {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+    background-image: url("./img/unbeatable.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header .headercontact-container {
+    width: 80%;
+    height: 70px;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: yellow; */
+    align-items: center;
+    
+}
+
+header .headercontact-container .header-contact-box {
+    width: 120px;
+    height: 60px;
+    /* background-color: green; */
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .headercontact-container .header-contact-box ion-icon {
+    font-size: 35px;
+    color: dodgerblue;
+}
+
+header .headercontact-container .header-contact-box span {
+    font-size: 12px;
+    color: dodgerblue;
+    /* background-color: blue; */
+}
+
+header .headercontact-container .header-contact {
+    width: 45%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    align-items: center;
+}
+
+@media only screen and (max-width:650px) {
+     header .headercontact-container 
+    .header-contact {
+        width: 65%;
+    }
+
+    header .headercontact-container .header-contact-box ion-icon {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:495px) {
+    header .headercontact-container 
+    .header-contact-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .headercontact-container {
+        width: 90%;
+    }
+}
+
+header nav {
+    width: 80%;
+    height: 50px;
+    /* background-color: green; */
+}
+
+header nav ul {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li:nth-child(1) {
+    width: 70px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(255, 0, 0, 0.938); */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+
+}
+
+header a {
+    text-shadow: 0 0 10px gray;
+}
+
+header label,
+header input {
+    display: none;
+}
+
+@media only screen and (max-width:615px) {
+    header {
+        align-items: center;
+    }
+
+    header nav {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        right: 100%;
+        z-index: 10;
+        bottom: 0;
+        transition: 0.8s ease all;
+    }
+
+    header nav ul {
+        width: inherit;
+        height: inherit;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgba(36, 77, 117, 90%);
+        
+    }
+
+    header label {
+        display: block;
+        position: fixed;
+        z-index: 25;
+        right: 10px;
+        top: 10px;
+        font-size: 25px;
+        color: white;
+
+    }
+
+    header :checked~.nav {
+        right: 0;
+        background-color: rgb(22, 21, 21);
+    }
+}
+
+header .shipanything {
+    width: 40%;
+    height: 200px;
+    text-align: center;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .shipanything h5 {
+    font-size: 16px;
+    color: rgb(248, 240, 240);
+}
+
+header .shipanything h4 {
+    font-size: 30px;
+    color: white;
+}
+
+header .shipanything button {
+    width: 120px;
+    height: 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: dodgerblue;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:615px) {
+    header .shipanything {
+        width: 70%;
+        height: 100px;
+    }
+
+    header .shipanything h5 {
+        font-size: 10px;
+    }
+
+    header .shipanything h4 {
+        font-size: 17px;
+    }
+
+    header .shipanything button {
+        width: 80px;
+        height: 27px;
+        font-size: 10px;
+    }
+}
+
+/* header and nav end */
+
+/* header and main started */
+
+main {
+    width: 100%;
+    /* height: 400px; */
+    background-color: rgba(36, 77, 117, 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .section-1 {
+    width: 80%;
+    /* height: 120px;  */
+    /* background-color: gold; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 125px;
+    /* top: -100px; */
+    padding: 10px 0 10px 0;
+}
+
+main .section-1 .sec-1-container {
+    width: 150px;
+    height: 120px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    transition: 0.3s ease all;
+    cursor: pointer;
+}
+
+main .section-1 .sec-1-container i {
+    font-size: 30px;
+    color: gray;
+}
+
+main .section-1 .sec-1-container span {
+    font-size: 15px;
+    font-weight: 600;
+    color: dodgerblue;
+}
+
+main .section-1 .sec-1-container h4 {
+    color: dodgerblue;
+    font-size: 12px;
+}
+
+main .section-1 .sec-1-container:hover>p::before {
+    content: "➤";
+    width: 60px;
+    height: 60px;
+    background-color: dodgerblue;
+    border-radius: 50%;
+}
+
+main .section-1 .sec-1-container:hover {
+    background-color: dodgerblue;
+    transform: scaleY(1.2);
+
+}
+
+main .section-1 .sec-1-container:hover>span {
+    color: white;
+}
+
+main .section-1 .sec-1-container:hover>h4 {
+    color: white;
+}
+
+@media only screen and (max-width:973px) {
+    header {
+        height: 350px;
+    }
+
+    main .section-1 {
+        flex-wrap: wrap;
+        gap: 20px;
+        position: static;
+    }
+    main .section-2{
+        padding: 5px 0 0 0;
+    }
+
+}
+
+@media only screen and (max-width:615px) {
+    header {
+        height: 200px;
+    }
+
+    main .section-1 .sec-1-container {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    main .section-1 {
+        justify-content: center;
+    }
+
+    main .section-1 .sec-1-container {
+        width: 95%;
+    }
+}
+
+/* section-1 end  */
+/* section-2 started */
+
+.section-2 {
+    width: 80%;
+    /* height: 400px; */
+    padding: 70px 0 10px 0;
+    /* background-color: darkolivegreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-2 h2 {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+    color: white;
+}
+
+.section-2 .section-2-container {
+    width: 100%;
+    /* height: 300px; */
+    /* background-color: firebrick; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3px;
+    padding: 5px 0 5px 0;
+}
+
+.section-2 .section-2-container img {
+    width: 500px;
+    height: 250px;
+
+}
+
+.section-2 .section-2-container 
+.section-2-container-text-box {
+    width: 400px;
+    height: 230px;
+    /* background-color: fuchsia; */
+    padding: 15px 5px 15px 5px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.section-2 .section-2-container 
+.section-2-container-text-box p{
+    color: white;
+}
+@media only screen and (max-width:1170px) {
+    .section-2{
+        padding: 50px 0 0 0;
+
+    }
+
+}
+@media only screen and (max-width:810px) {
+    .section-2 .section-2-container {
+        flex-wrap: wrap;
+    }
+    .section-2 .section-2-container img {
+        width: 90%;
+    }
+
+    .section-2 .section-2-container 
+    .section-2-container-text-box {
+        width: 90%;
+        height: 170px;
+        justify-content: space-around;
+        padding: 5px 5px 5px 5px;
+
+    }
+
+    .section-2 h2 {
+        font-size: 20px;
+        margin: 0 0 5px 0;
+
+    }
+}
+@media only screen and (max-width:460px) {
+    .section-2 .section-2-container 
+    .section-2-container-text-box{
+        height: 260px;
+    }
+
+}
+main #section-2 
+ .section-2-container{
+    flex-direction: row-reverse;
+
+}
+main #section-2{
+    padding: 20px 0 10px 0;
+}
+/* section-2 end sction-3 started */
+
+main .section-3{
+    background-image: url("../img/business-discussion.jpg");
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+main .section-3 h1{
+    font-size: 40px;
+    color: white;
+    background: rgba(0, 0, 0, 0.445);
+    border-radius: 5px;
+    padding: 20px;
+    /* font-weight: 600; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+/* <!-- sction-3 end -->  */
+    /* <!-- main end --> */
+
+    /* <!-- Footer started --> */
+
+
+
+footer{
+    width: 100%;
+    /* height: 300px; */
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0 10px 0;
+}
+footer .footer-box{
+    width: 300px;
+    height: 160px;
+    /* background-color: rgb(36, 6, 36); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+footer .footer-box h2{
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+footer .footer-box .footer-box-mini{
+    width: 60%;
+    height: 100px;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer .footer-box .footer-box-mini a{
+    text-decoration: none;
+}
+footer .footer-box .footer-box-mini a i{
+    font-size: 30px;
+    color: white;
+    transition: 0.5s ease all;
+}
+
+
+footer .footer-box .footer-box-mini a i:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+    color: blue;
+}
+@media only screen and (max-width:1230px){
+    footer{
+        justify-content: space-evenly;
+    }
+    footer .footer-box{
+        width: 33%;
+    }
+}
+@media only screen and (max-width:650px){
+    main .section-3{
+        height: 300px;
+    }
+    main .section-3 h1{
+        font-size:25px;
+    }
+    footer{
+        justify-content: space-evenly;
+    }
+    footer .footer-box{
+        width: 90%;
+        height: 100px;
+        padding: 5px 0 5px 0;
+        /* background-color: pink; */
+    }
+    footer .footer-box h2{
+        font-size: 20px;
+        transition: 0.3s ease all;
+    }
+    footer .footer-box .footer-box-mini{
+        width: 50%;
+    }
+    footer .footer-box .footer-box-mini a i{
+        font-size: 25px;
+    }
+    .section-2 .section-2-container img {
+        width: 300px;
+        height: 150px;
+    }
+    .section-2 .section-2-container p{
+        text-align: center;
+    }
+    
+}
+@media only screen and (max-width:450px){
+    footer .footer-box .footer-box-mini{
+        width: 65%;
+    }
+    
+}
+footer .footer-box:nth-of-type(3){
+    /* background-color: brown; */
+    height: 165px;
+}
+footer .footer-box:nth-of-type(3) .footer-box-mini{
+    height:120px ;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    /* background-color: aqua; */
+    padding: 5px 0 5px 0;
+    gap: 5px;
+}
+footer .footer-box:nth-of-type(3) .footer-box-mini a h2:hover{
+    color: blue;
+}
+footer .footer-box:nth-of-type(4){
+    height: 190px;
+    /* background-color: pink; */
+}
+footer .footer-box:nth-of-type(4) .footer-box-mini{
+    width: 100%;
+    height: 140px;
+    /* background-color: brown; */
+}
+
+footer .footer-box:nth-of-type(4) .footer-box-mini iframe{
+    width: 100%;
+    height: inherit;
+}
+
+/* <!-- Footer end --> */
